@@ -1,0 +1,4 @@
+usage:
+  - '!prune 50'
+  - '!prune 50 user @user'
+  - '!prune 15 links'

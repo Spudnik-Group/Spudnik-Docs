@@ -1,0 +1,1 @@
+Returns a random dog fact.
