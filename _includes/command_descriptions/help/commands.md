@@ -1,0 +1,1 @@
+Returns a list of command groups, or all commands in a given group.

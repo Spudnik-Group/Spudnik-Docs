@@ -1,0 +1,1 @@
+Returns helpful information on the bot, or detailed information for a specific command.
