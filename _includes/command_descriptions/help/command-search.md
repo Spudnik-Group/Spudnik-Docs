@@ -1,0 +1,1 @@
+Search for a command with the given text.
