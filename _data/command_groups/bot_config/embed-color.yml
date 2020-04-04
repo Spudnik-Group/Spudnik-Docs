@@ -1,3 +1,4 @@
 usage:
-  - "!embedcolor 555555"
+  - "!embedcolor ff0000"
+  - "!embedcolor f00"
   - "!embedcolor"
