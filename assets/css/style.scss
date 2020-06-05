@@ -1,28 +1,58 @@
 ---
 ---
 
+@font-face {
+	font-family: "Soviet Program";
+	src: url('/assets/fonts/soviet_program/SovietProgram.ttf');
+}
+@font-face {
+	font-family: "Soviet Program Bold";
+	src: url('/assets/fonts/soviet_program/SovietProgram-Bold.ttf');
+}
+@font-face {
+	font-family: "Soviet Program BoldItalic";
+	src: url('/assets/fonts/soviet_program/SovietProgram-BoldItalic.ttf');
+}
+@font-face {
+	font-family: "Soviet Program Italic";
+	src: url('/assets/fonts/soviet_program/SovietProgram-Italic.ttf');
+}
+  
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 nav {
 	background-color: #8226B6;
 	background-image: linear-gradient(120deg, #191970, #8226B6);
 	
-	.nav-wrapper {
-		#logo-container {
-			margin-left: 10px;
-		}
-		ul.top-nav {
-			margin-left: 150px;
-		}
+	.brand-logo {
+		position: static;
 	}
-	.sidenav .user-view img {
-		margin: auto;
+	.nav-wrapper {
+		ul.top-nav {
+			margin-left: 32px;
+		}
 	}
 }
 
-.full-page-intro {
-    background-image: url(/assets/img/aurora.jpg);
-    background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center top;
+.sidenav .user-view {
+	img {
+		margin: auto;
+	}
+	.name {
+		font-size: 2.1rem;
+		font-family: "Soviet Program";
+	}
+}
+
+.main-content, footer {
+	padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+	.main-content, footer {
+	  	padding-left: 0;
+	}
 }
 
 .btn-large i {
@@ -43,6 +73,31 @@ footer.page-footer {
 	a {
 		text-decoration: none;
 		color: white;
+	}
+}
+
+section h4 {
+	margin-top: 0.912rem;
+}
+
+.collapsible-header .row {
+	margin-bottom: 0;
+}
+
+.collapsible-body {
+	.badge-container {
+		display: flex;
+		align-items: start;
+
+		.badge {
+			margin: 3px;
+		}
+	}
+
+	.code-wrapper {
+		padding: 5px;
+		color: #fff;
+		background-color: #512da8;
 	}
 }
 
