@@ -1,0 +1,29 @@
+{% include head.html %}
+
+<ul class="sidenav sidenav-fixed">
+	<li>
+		<div class="user-view center-align">
+			<img class="circle" src="https://i.imgur.com/xF8vf6H.png">
+			<a href="/"><span class="black-text name">Spudnik</span></a>
+		</div>
+	</li>
+	<li><div class="divider"></div></li>
+	<!-- <li>
+		<a href="https://spudnik.io/features">Features</a>
+	</li> -->
+	<li>
+		<a class="{% if page.layout == 'home' %}active{% endif %}" href="/">Docs Home</a>
+	</li>
+	<li>
+		<a class="{% if page.layout == 'getting-started' %}active{% endif %}" href="/getting-started">Getting Started</a>
+	</li>
+	<li>
+		<a class="{% if page.layout == 'commands' %}active{% endif %}" href="/commands">Commands</a>
+	</li>
+</ul>
+
+<main class="main-content">
+	{{ content }}
+</main>
+
+{% include footer.html %}

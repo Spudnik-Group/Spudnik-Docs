@@ -1,0 +1,1443 @@
+[
+  {
+    "name": "bot-info",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "bot-info",
+        "description": "Returns GitHub release notes for the 3 most recent releases.",
+        "details": "No extended help available.",
+        "name": "changelog",
+        "nsfw": false,
+        "usage": "!changelog ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "bot-info",
+        "description": "Returns options to donate to help support development and hosting of the bot.",
+        "details": "No extended help available.",
+        "name": "donate",
+        "nsfw": false,
+        "usage": "!donate ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "bot-info",
+        "description": "Provides links to suggest features, submit bugs, or email the devs.",
+        "details": "No extended help available.",
+        "name": "feedback",
+        "nsfw": false,
+        "usage": "!feedback ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "bot-info",
+        "description": "Returns a link to my source code!",
+        "details": "No extended help available.",
+        "name": "source",
+        "nsfw": false,
+        "usage": "!source ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "statistics",
+        "bot_perms": "",
+        "category": "bot-info",
+        "description": "Returns statistics about the bot.",
+        "details": "No extended help available.",
+        "name": "stats",
+        "nsfw": false,
+        "usage": "!stats ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "bot-info",
+        "description": "Returns links to upvote the bot on bot listing sites.",
+        "details": "No extended help available.",
+        "name": "upvote",
+        "nsfw": false,
+        "usage": "!upvote ",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "bot-owner",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "bot-owner",
+        "description": "Blacklists or un-blacklists users and guilds from the bot.",
+        "details": "No extended help available.",
+        "name": "blacklist",
+        "nsfw": false,
+        "usage": "!blacklist <User:user|Guild:guild|GuildID:string{17,18}> [...]",
+        "user_perms": "BOT OWNER"
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "bot-owner",
+        "description": "Force the bot to leave a guild",
+        "details": "No extended help available.",
+        "name": "leave",
+        "nsfw": false,
+        "usage": "!leave <Guild:guild>",
+        "user_perms": "BOT OWNER"
+      },
+      {
+        "aliases": "ls, listservers, listservers",
+        "bot_perms": "",
+        "category": "bot-owner",
+        "description": "Returns a list of servers the bot is in.",
+        "details": "No extended help available.",
+        "name": "list-servers",
+        "nsfw": false,
+        "usage": "!list-servers ",
+        "user_perms": "BOT OWNER"
+      },
+      {
+        "aliases": "ss, searchservers, searchservers",
+        "bot_perms": "",
+        "category": "bot-owner",
+        "description": "Search for a server the bot is in.",
+        "details": "No extended help available.",
+        "name": "search-servers",
+        "nsfw": false,
+        "usage": "!search-servers <serverName:string{2}>",
+        "user_perms": "BOT OWNER"
+      }
+    ]
+  },
+  {
+    "name": "config-bot",
+    "commands": [
+      {
+        "aliases": "deletecommandmessages, deletecommandmessages",
+        "bot_perms": [
+          "MANAGE_MESSAGES"
+        ],
+        "category": "config-bot",
+        "description": "Enable or disable the Delete Command Messages feature.",
+        "details": "No extended help available.",
+        "name": "delete-command-messages",
+        "nsfw": false,
+        "usage": "!delete-command-messages <on|off>",
+        "user_perms": "MANAGE_MESSAGES"
+      },
+      {
+        "aliases": "disable-command, cmd-off, command-off, disablecommand, cmdoff, commandoff",
+        "bot_perms": "",
+        "category": "config-bot",
+        "description": "Disables a command or command category.",
+        "details": "No extended help available.",
+        "name": "disable",
+        "nsfw": false,
+        "usage": "!disable <commandOrCategory:commandOrCategory>",
+        "user_perms": "MANAGE_GUILD"
+      },
+      {
+        "aliases": "embedcolor, embedcolor",
+        "bot_perms": "",
+        "category": "config-bot",
+        "description": "Used to change the default embed color the bot uses for responses, or reset it.",
+        "details": "Supplying no hex color resets the embed color to default.",
+        "name": "embed-color",
+        "nsfw": false,
+        "usage": "!embed-color (color:hexcolor)",
+        "user_perms": "MANAGE_GUILD"
+      },
+      {
+        "aliases": "enable-command, cmd-off, command-off, enablecommand, cmdoff, commandoff",
+        "bot_perms": "",
+        "category": "config-bot",
+        "description": "Enables a command or command group.",
+        "details": "No extended help available.",
+        "name": "enable",
+        "nsfw": false,
+        "usage": "!enable <commandOrCategory:commandOrCategory>",
+        "user_perms": "MANAGE_GUILD"
+      },
+      {
+        "aliases": "nickname",
+        "bot_perms": [
+          "MANAGE_NICKNAMES"
+        ],
+        "category": "config-bot",
+        "description": "Used to change the bot's nickname on your server, or reset it.",
+        "details": "Supplying no nickname resets the nickname to default.",
+        "name": "nick",
+        "nsfw": false,
+        "usage": "!nick [nickName:string]",
+        "user_perms": "MANAGE_GUILD"
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "config-bot",
+        "description": "Returns or sets the command prefix.",
+        "details": "If no prefix is provided, the current prefix will be shown.<br>If the prefix is \"default\", the prefix will be reset to the bot's default prefix.<br>If the prefix is \"none\", the prefix will be removed entirely, only allowing mentions to run commands.",
+        "name": "prefix",
+        "nsfw": false,
+        "usage": "!prefix [prefix:string]",
+        "user_perms": "MANAGE_GUILD"
+      }
+    ]
+  },
+  {
+    "name": "config-feature",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "config-feature",
+        "description": "Have the bot post an announcement to a pre-configured or specified channel.",
+        "details": "",
+        "name": "announce",
+        "nsfw": false,
+        "usage": "!announce <channel|send|direct> <content:content> [text:...string]",
+        "user_perms": "MANAGE_GUILD"
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "config-feature",
+        "description": "Used to configure the message to be sent when a user leaves your guild.",
+        "details": "**Subcommand Usage**:<br>`status` - return the goodbye feature configuration details.<br>`message <text to say send>` - set the goodbye message. Use { guild } for guild name, and { user } to reference the user leaving.<br>`channel <#channelMention>` - set the channel for the goodbye message to be displayed.<br>`on` - enable the goodbye message feature.<br>`off` - disable the goodbye message feature.",
+        "name": "goodbye",
+        "nsfw": false,
+        "usage": "!goodbye <message|channel|on|off|status> (content:content)",
+        "user_perms": "MANAGE_GUILD"
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "MANAGE_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "category": "config-feature",
+        "description": "Used to configure the :star: Star Board feature.",
+        "details": "**Subcommand Usage**:<br>`status` - returns the star board configuration details.<br>`channel <#channelMention>` - sets star board channel to the channel supplied.<br>`trigger <emoji>` - sets emoji to save to star board.<br>`on` - enable the star board feature.<br>`off` - disable the star board feature.",
+        "name": "starboard",
+        "nsfw": false,
+        "usage": "!starboard <on|off|status|channel|trigger> (content:content)",
+        "user_perms": "MANAGE_GUILD"
+      },
+      {
+        "aliases": "tos, termsofservice",
+        "bot_perms": "",
+        "category": "config-feature",
+        "description": "Used to configure the Terms of Service for a guild.",
+        "details": "**Subcommand Usage**:<br>`channel <#channelMention>` - set the channel to display the terms of service in.<br>`title <info block number> <text>` - edit the title of a terms of service info block.<br>`body <info block number> <text>` - edit the body of a terms of service info block.<br>`get <info block number> (raw:boolean)` - returns the requested block number.<br>`list` - return all the terms of service embedded blocks.<br>`status` - return the terms of service feature configuration details.<br>`welcome enabled <boolean>` - enable/disable terms of service welcome message.<br>`welcome message <text>` - set the welcome text to prompt users to accept the terms of service.",
+        "name": "terms-of-service",
+        "nsfw": false,
+        "usage": "!terms-of-service <channel|title|body|get|welcome|list|status> (item:item) [text:string] [...]",
+        "user_perms": "MANAGE_GUILD"
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "config-feature",
+        "description": "Used to configure the message to be sent when a new user join your guild.",
+        "details": "**Subcommand Usage**:<br>`status` - return the welcome feature configuration details.<br>`message <text to send>` - set the welcome message. Use { guild } for guild name, and { user } to reference the user joining.<br>`channel <#channelMention>` - set the channel for the welcome message to be displayed.<br>`on` - enable the welcome message feature.<br>`off` - disable the welcome message feature.",
+        "name": "welcome",
+        "nsfw": false,
+        "usage": "!welcome <message|channel|on|off|status> (content:content)",
+        "user_perms": "MANAGE_GUILD"
+      }
+    ]
+  },
+  {
+    "name": "config-server",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": [
+          "MANAGE_MESSAGES"
+        ],
+        "category": "config-server",
+        "description": "Enable or disable the adblock feature.",
+        "details": "No extended help available.",
+        "name": "adblock",
+        "nsfw": false,
+        "usage": "!adblock <on|off>",
+        "user_perms": "MANAGE_MESSAGES"
+      },
+      {
+        "aliases": "mod-log, modlog",
+        "bot_perms": "",
+        "category": "config-server",
+        "description": "Enable or disable the modlog feature.",
+        "details": "**Subcommand Usage**:<br>`status` - return the mod log configuration details.<br>`channel <#channelMention>` - set mod log channel to the channel supplied.<br>`on` - enable the mod log feature.<br>`off` - disable the mod log feature.",
+        "name": "modlog",
+        "nsfw": false,
+        "usage": "!modlog <on|off|status|channel> (channel:channel)",
+        "user_perms": "MANAGE_GUILD"
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "MANAGE_ROLES"
+        ],
+        "category": "config-server",
+        "description": "Used to add or remove roles from your server.",
+        "details": "**Subcommand Usage**:<br>`add \"role name\" (hexcolor)` - adds the role to your guild with the supplied color.<br>`remove role name` - removes the role from your guild.",
+        "name": "role",
+        "nsfw": false,
+        "usage": "!role <add|remove> <name:role|name:string> (color:hexcolor)",
+        "user_perms": "MANAGE_ROLES"
+      }
+    ]
+  },
+  {
+    "name": "convert",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "convert",
+        "description": "Base64 decodes a string",
+        "details": "No extended help available.",
+        "name": "base64decode",
+        "nsfw": false,
+        "usage": "!base64decode <stringToDecode:regex/^(?:[A-Za-z0-9+\\/]{4})*(?:[A-Za-z0-9+\\/]{2}==|[A-Za-z0-9+\\/]{3}=)?$/>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "convert",
+        "description": "Base64 encodes a string",
+        "details": "No extended help available.",
+        "name": "base64encode",
+        "nsfw": false,
+        "usage": "!base64encode <stringToEncode:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "convert",
+        "description": "Converts binary to decimal",
+        "details": "No extended help available.",
+        "name": "bin2dec",
+        "nsfw": false,
+        "usage": "!bin2dec <numberToConvert:regex/^[0-1]+$/>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "convert",
+        "description": "Converts binary to decimal",
+        "details": "No extended help available.",
+        "name": "bin2hex",
+        "nsfw": false,
+        "usage": "!bin2hex <numberToConvert:regex/^[0-1]+$/>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "convert",
+        "description": "Converts hexadecimal to decimal",
+        "details": "No extended help available.",
+        "name": "dec2bin",
+        "nsfw": false,
+        "usage": "!dec2bin <numberToConvert:regex/^[0-9]+$/>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "convert",
+        "description": "Converts decimal to hexadecimal",
+        "details": "No extended help available.",
+        "name": "dec2hex",
+        "nsfw": false,
+        "usage": "!dec2hex <numberToConvert:regex/^[0-9]+$/>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "convert",
+        "description": "Converts hexadecimal to decimal",
+        "details": "No extended help available.",
+        "name": "hex2bin",
+        "nsfw": false,
+        "usage": "!hex2bin <numberToConvert:regex/^(0[x|X])?[0-9A-Fa-f]+$/>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "convert",
+        "description": "Converts hexadecimal to decimal",
+        "details": "No extended help available.",
+        "name": "hex2dec",
+        "nsfw": false,
+        "usage": "!hex2dec <numberToConvert:regex/^(0[x|X])?[0-9A-Fa-f]+$/>",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "developer",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "developer",
+        "description": "Shows the install/publish size of a cargo crate.",
+        "details": "No extended help available.",
+        "name": "crate",
+        "nsfw": false,
+        "usage": "!crate <name:string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "gh",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "developer",
+        "description": "Returns details for a GitHub repository.",
+        "details": "No extended help available.",
+        "name": "github",
+        "nsfw": false,
+        "usage": "!github <query:string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "hb",
+        "bot_perms": "",
+        "category": "developer",
+        "description": "Upload code or text to hastebin.",
+        "details": "No extended help available.",
+        "name": "hastebin",
+        "nsfw": false,
+        "usage": "!hastebin <code:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "jsdocs",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "developer",
+        "description": "Returns results for the supplied query from the MDN.",
+        "details": "No extended help available.",
+        "name": "mdn",
+        "nsfw": false,
+        "usage": "!mdn <query:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "npmpackage, npmpkg, nodepackagemanager",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "developer",
+        "description": "Returns details for an NPM package.",
+        "details": "No extended help available.",
+        "name": "npm",
+        "nsfw": false,
+        "usage": "!npm <query:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "developer",
+        "description": "Shows the install/publish size of a npm package.",
+        "details": "No extended help available.",
+        "name": "pkgsize",
+        "nsfw": false,
+        "usage": "!pkgsize <name:string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "stackoverflow, stackoverflow",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "developer",
+        "description": "Returns results for the supplied query from Stack Overflow.",
+        "details": "No extended help available.",
+        "name": "stack-overflow",
+        "nsfw": false,
+        "usage": "!stack-overflow <query:...string>",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "games-mp",
+    "commands": [
+      {
+        "aliases": "applestoapples, a2a, applestoapples",
+        "bot_perms": "",
+        "category": "games-mp",
+        "description": "Compete to see who can come up with the best card to match an adjective.",
+        "details": "No extended help available.",
+        "name": "apples-to-apples",
+        "nsfw": false,
+        "usage": "!apples-to-apples <maxpoints:integer{1,20}>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "balloonpop, balloonpop",
+        "bot_perms": "",
+        "category": "games-mp",
+        "description": "Don't let yourself be the last one to pump the balloon before it pops!",
+        "details": "No extended help available.",
+        "name": "balloon-pop",
+        "nsfw": false,
+        "usage": "!balloon-pop [opponent:user]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "fight, death-battle, deathbattle",
+        "bot_perms": "",
+        "category": "games-mp",
+        "description": "Engage in a turn-based battle against another user or the AI.",
+        "details": "No extended help available.",
+        "name": "battle",
+        "nsfw": false,
+        "usage": "!battle (opponent:user)",
+        "user_perms": ""
+      },
+      {
+        "aliases": "crude-cards, pretend-youre-xyzzy, cah, cards-against-humanity, cardsagainsthumanity, crudecards, pretendyourexyzzy, cardsagainsthumanity",
+        "bot_perms": "",
+        "category": "games-mp",
+        "description": "Compete to see who can come up with the best card to fill in the blank.",
+        "details": "No extended help available.",
+        "name": "cards-against-humanity",
+        "nsfw": true,
+        "usage": "!cards-against-humanity <maxPts:int{1,20}> [noMidJoin:boolean]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "eer, emojiemojirevolution, emojiemojirevolution",
+        "bot_perms": "",
+        "category": "games-mp",
+        "description": "Can you type arrow emoji faster than anyone else has ever typed them before?",
+        "details": "No extended help available.",
+        "name": "emoji-emoji-revolution",
+        "nsfw": false,
+        "usage": "!emoji-emoji-revolution <opponent:user>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "western-gunfight, westerngunfight",
+        "bot_perms": "",
+        "category": "games-mp",
+        "description": "Engage in a western gunfight against another user. High noon.",
+        "details": "No extended help available.",
+        "name": "gunfight",
+        "nsfw": false,
+        "usage": "!gunfight <opponent:user>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "hunger-games-simulator, brant-steele, hungergames, hungergames, hungergamessimulator, brantsteele",
+        "bot_perms": "",
+        "category": "games-mp",
+        "description": "Simulate a Hunger Games match with up to 24 tributes.",
+        "details": "No extended help available.",
+        "name": "hunger-games",
+        "nsfw": false,
+        "usage": "!hunger-games <tributes:user> [...]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "tictactoe, tictactoe",
+        "bot_perms": "",
+        "category": "games-mp",
+        "description": "Play a game of tic-tac-toe with another user.",
+        "details": "No extended help available.",
+        "name": "tic-tac-toe",
+        "nsfw": false,
+        "usage": "!tic-tac-toe <opponent:user>",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "games-sp",
+    "commands": [
+      {
+        "aliases": "1-in, one-in, lottery-classic, 1in, onein, lotteryclassic",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Attempt to win with a 1 in 1000 (or your choice) chance of winning.",
+        "details": "No extended help available.",
+        "name": "chance",
+        "nsfw": false,
+        "usage": "!chance [chance:int{1}]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "fish, fishing",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Go fishing.",
+        "details": "No extended help available.",
+        "name": "fishy",
+        "nsfw": false,
+        "usage": "!fishy ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "googlefued, googlefued",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Attempt to determine the top suggestions for a Google search.",
+        "details": "No extended help available.",
+        "name": "google-fued",
+        "nsfw": false,
+        "usage": "!google-fued (question:question)",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Prevent a man from being hanged by guessing a word as fast as you can.",
+        "details": "No extended help available.",
+        "name": "hangman",
+        "nsfw": false,
+        "usage": "!hangman ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "math-game, mathquiz, mathquiz, mathgame",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "See how fast you can answer a math problem in a given time limit.",
+        "details": "**Difficulties**: easy, medium, hard, extreme, impossible",
+        "name": "math-quiz",
+        "nsfw": false,
+        "usage": "!math-quiz (difficulty:difficulty)",
+        "user_perms": ""
+      },
+      {
+        "aliases": "lotto",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Attempt to win the lottery with 6 numbers.",
+        "details": "No extended help available.",
+        "name": "lottery",
+        "nsfw": false,
+        "usage": "!lottery <choice:int{1,70}> [...]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "jeopardy",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Answer a quiz question.",
+        "details": "**Types**: multiple, boolean<br>**Difficulties**: easy, medium, hard",
+        "name": "quiz",
+        "nsfw": false,
+        "usage": "!quiz (type:type) (difficulty:difficulty)",
+        "user_perms": ""
+      },
+      {
+        "aliases": "rps, rock-paper-scissors, rockpaperscissors, rockpaperscissors",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Play Rock-Paper-Scissors.",
+        "details": "No extended help available.",
+        "name": "rock-paper-scissors",
+        "nsfw": false,
+        "usage": "!rock-paper-scissors <choice:string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Play a game of roulette.",
+        "details": "No extended help available.",
+        "name": "roulette",
+        "nsfw": false,
+        "usage": "!roulette <space:string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Play a game of slots.",
+        "details": "No extended help available.",
+        "name": "slots",
+        "nsfw": false,
+        "usage": "!slots ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "sorting-hat, pottermore, hogwarts, sortinghatquiz, sortinghatquiz, sortinghat",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "Take a quiz to determine your Hogwarts house.",
+        "details": "No extended help available.",
+        "name": "sorting-hat-quiz",
+        "nsfw": false,
+        "usage": "!sorting-hat-quiz ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "typing-game, typingtest, typingtest, typinggame",
+        "bot_perms": "",
+        "category": "games-sp",
+        "description": "See how fast you can type a sentence in a given time limit.",
+        "details": "**Difficulties**: easy, medium, hard, extreme, impossible",
+        "name": "typing-test",
+        "nsfw": false,
+        "usage": "!typing-test (difficulty:difficulty)",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "gaming",
+    "commands": [
+      {
+        "aliases": "play-game, lets-play, go-play, playgame, letsplay, goplay",
+        "bot_perms": "",
+        "category": "gaming",
+        "description": "Displays a link to launch a steam game.",
+        "details": "Only a few games have been added at this time, submit a ticket on our GitHub to request specific ones.",
+        "name": "go",
+        "nsfw": false,
+        "usage": "!go <game:string>",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "help",
+    "commands": [
+      {
+        "aliases": "commandsearch, commandsearch",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "help",
+        "description": "Search for a command with the given text.",
+        "details": "No extended help available.",
+        "name": "command-search",
+        "nsfw": false,
+        "usage": "!command-search <commandName:string{2}>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "cmds",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "help",
+        "description": "Returns a list of command groups, or all commands in a given group.",
+        "details": "No extended help available.",
+        "name": "commands",
+        "nsfw": false,
+        "usage": "!commands [categoryName:string]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "help",
+        "description": "Used to return helpful information on the bot, or detailed information for a specified command.",
+        "details": "No extended help available.",
+        "name": "help",
+        "nsfw": false,
+        "usage": "!help [command:cmd]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "help",
+        "description": "Returns a link to my support server!",
+        "details": "No extended help available.",
+        "name": "support",
+        "nsfw": false,
+        "usage": "!support ",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "info",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "info",
+        "description": "Shows a user's avatar",
+        "details": "No extended help available.",
+        "name": "avatar",
+        "nsfw": false,
+        "usage": "!avatar (user:optional-user)",
+        "user_perms": ""
+      },
+      {
+        "aliases": "cid, channelid, channelID, channelid",
+        "bot_perms": "",
+        "category": "info",
+        "description": "Returns the id of the specified channel, or the current one.",
+        "details": "No extended help available.",
+        "name": "channel-id",
+        "nsfw": false,
+        "usage": "!channel-id (channel:optional-channel)",
+        "user_perms": ""
+      },
+      {
+        "aliases": "cinfo, channelinfo, channelinfo",
+        "bot_perms": "",
+        "category": "info",
+        "description": "Returns info on the specified channel, or the current one.",
+        "details": "No extended help available.",
+        "name": "channel-info",
+        "nsfw": false,
+        "usage": "!channel-info (channel:optional-channel)",
+        "user_perms": ""
+      },
+      {
+        "aliases": "ct, channeltopic, topic, channeltopic",
+        "bot_perms": "",
+        "category": "info",
+        "description": "Returns the purpose of the specified channel, or the current one.",
+        "details": "No extended help available.",
+        "name": "channel-topic",
+        "nsfw": false,
+        "usage": "!channel-topic (channel:optional-channel)",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "info",
+        "description": "Used to return the ping.",
+        "details": "No extended help available.",
+        "name": "pong",
+        "nsfw": false,
+        "usage": "!pong ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "roleinfo, roleinfo",
+        "bot_perms": "",
+        "category": "info",
+        "description": "Get information on a role with an id or a mention.",
+        "details": "No extended help available.",
+        "name": "role-info",
+        "nsfw": false,
+        "usage": "!role-info <Role:role>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "info",
+        "description": "Lists default and self-assignable roles.",
+        "details": "No extended help available.",
+        "name": "roles",
+        "nsfw": false,
+        "usage": "!roles ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "server-stats, serverstats",
+        "bot_perms": "",
+        "category": "info",
+        "description": "Returns statistics about the server.",
+        "details": "No extended help available.",
+        "name": "server",
+        "nsfw": false,
+        "usage": "!server ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "ti",
+        "bot_perms": [
+          "MANAGE_GUILD"
+        ],
+        "category": "info",
+        "description": "Shows the top invites in a server.",
+        "details": "No extended help available.",
+        "name": "topinvites",
+        "nsfw": false,
+        "usage": "!topinvites ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "user-stats, userstats",
+        "bot_perms": "",
+        "category": "info",
+        "description": "Returns statistics about a user.",
+        "details": "Supplying no usermention returns details about the calling user.",
+        "name": "user",
+        "nsfw": false,
+        "usage": "!user (user:optional-user)",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "memes",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "memes",
+        "description": "Informs someone that they should \"git gud\".",
+        "details": "No extended help available.",
+        "name": "gitgud",
+        "nsfw": false,
+        "usage": "!gitgud [mention:member]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "ATTACH_FILES"
+        ],
+        "category": "memes",
+        "description": "Displays the High Noon XKCD comic.",
+        "details": "No extended help available.",
+        "name": "highnoon",
+        "nsfw": false,
+        "usage": "!highnoon ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "ATTACH_FILES"
+        ],
+        "category": "memes",
+        "description": "Displays a magical gif of Shia Labeouf.",
+        "details": "No extended help available.",
+        "name": "magic",
+        "nsfw": false,
+        "usage": "!magic ",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "misc",
+    "commands": [
+      {
+        "aliases": "google-this, googlethis",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "misc",
+        "description": "Returns a Let Me Google That For You link, so you can school a n00b.",
+        "details": "No extended help available.",
+        "name": "lmgtfy",
+        "nsfw": false,
+        "usage": "!lmgtfy <query:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "misc",
+        "description": "Returns a list of people playing games. Allows filtering.",
+        "details": "Supplying no game name provides you with a list of all users who are marked with the \"Playing\" status type.<br>Supplying a game name provides you with a list of all users with that game name as their status (case insensitive)",
+        "name": "playing",
+        "nsfw": false,
+        "usage": "!playing [game:...string]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "poll",
+        "bot_perms": "",
+        "category": "misc",
+        "description": "Generates a Strawpoll with the provided options.",
+        "details": "No extended help available.",
+        "name": "strawpoll",
+        "nsfw": false,
+        "usage": "!strawpoll <title:string> <option:string> <option:string> [...]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "unshorten",
+        "bot_perms": [
+          "EMBED_LINKS"
+        ],
+        "category": "misc",
+        "description": "Unshorten a link.",
+        "details": "No extended help available.",
+        "name": "unshort",
+        "nsfw": false,
+        "usage": "!unshort <query:string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "misc",
+        "description": "Returns a given XKCD comic number (or the latest if nothing specified)",
+        "details": "Supplying no comic number returns the latest comic.",
+        "name": "xkcd",
+        "nsfw": false,
+        "usage": "!xkcd [comicNumber:number]",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "moderation",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": [
+          "BAN_MEMBERS"
+        ],
+        "category": "moderation",
+        "description": "Bans the member, with a supplied reason",
+        "details": "No extended help available.",
+        "name": "ban",
+        "nsfw": false,
+        "usage": "!ban <member:user> <reason:...string>",
+        "user_perms": "BAN_MEMBERS"
+      },
+      {
+        "aliases": "clear-warn, warn-clear, clearwarns, clearwarns, clearwarn, warnclear",
+        "bot_perms": "",
+        "category": "moderation",
+        "description": "Clear warnings for the specified member.",
+        "details": "No extended help available.",
+        "name": "clear-warns",
+        "nsfw": false,
+        "usage": "!clear-warns <member:member> [reason:...string]",
+        "user_perms": "KICK_MEMBERS"
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "KICK_MEMBERS"
+        ],
+        "category": "moderation",
+        "description": "Kicks a user.",
+        "details": "No extended help available.",
+        "name": "kick",
+        "nsfw": false,
+        "usage": "!kick <member:user> [reason:...string]",
+        "user_perms": "KICK_MEMBERS"
+      },
+      {
+        "aliases": "list-warn, warn-list, warns, listwarns, listwarns, listwarn, warnlist",
+        "bot_perms": "",
+        "category": "moderation",
+        "description": "List warns for the guild.",
+        "details": "No extended help available.",
+        "name": "list-warns",
+        "nsfw": false,
+        "usage": "!list-warns ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "MANAGE_MESSAGES"
+        ],
+        "category": "moderation",
+        "description": "Moves a message to a different channel.",
+        "details": "No extended help available.",
+        "name": "move",
+        "nsfw": false,
+        "usage": "!move <message:msg> <channel:channel> [reason:...string]",
+        "user_perms": "MANAGE_MESSAGES"
+      },
+      {
+        "aliases": "clean, purge, clear",
+        "bot_perms": [
+          "MANAGE_MESSAGES"
+        ],
+        "category": "moderation",
+        "description": "Deletes messages.",
+        "details": "List of filters:<br>`invites`: Messages containing an invite<br>`@usermention`: Messages sent by @user<br>`bots`: Messages sent by bots<br>`uploads`: Messages containing an attachment<br>`me`: Messages sent by you<br>`links`: Messages containing a link",
+        "name": "prune",
+        "nsfw": false,
+        "usage": "!prune <limit:integer{1,100}> [links|invites|bots|me|uploads|user:user]",
+        "user_perms": "MANAGE_MESSAGES"
+      },
+      {
+        "aliases": "soft-ban, softban",
+        "bot_perms": [
+          "BAN_MEMBERS"
+        ],
+        "category": "moderation",
+        "description": "Soft-Bans the user, with a supplied reason",
+        "details": "No extended help available.",
+        "name": "softban",
+        "nsfw": false,
+        "usage": "!softban <member:member> <reason:...string> [when:time]",
+        "user_perms": "BAN_MEMBERS"
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "BAN_MEMBERS"
+        ],
+        "category": "moderation",
+        "description": "Un-Bans the user.",
+        "details": "No extended help available.",
+        "name": "unban",
+        "nsfw": false,
+        "usage": "!unban <member:user> [reason:...string]",
+        "user_perms": "BAN_MEMBERS"
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "moderation",
+        "description": "Warn a member with a specified amount of points",
+        "details": "No extended help available.",
+        "name": "warn",
+        "nsfw": false,
+        "usage": "!warn <member:member> <points:int> [reason:...string]",
+        "user_perms": "MANAGE_MESSAGES"
+      }
+    ]
+  },
+  {
+    "name": "random",
+    "commands": [
+      {
+        "aliases": "8ball",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Ask the magic 8 ball a question.",
+        "details": "No extended help available.",
+        "name": "8ball",
+        "nsfw": false,
+        "usage": "!8ball <query:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "ATTACH_FILES"
+        ],
+        "category": "random",
+        "description": "Blesses you with a random bacon gif.",
+        "details": "No extended help available.",
+        "name": "bacon",
+        "nsfw": false,
+        "usage": "!bacon ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "catfact, catfact",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Returns a random cat fact.",
+        "details": "No extended help available.",
+        "name": "cat-fact",
+        "nsfw": false,
+        "usage": "!cat-fact ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Have the bot choose something for you.",
+        "details": "No extended help available.",
+        "name": "choose",
+        "nsfw": false,
+        "usage": "!choose <choice:string> <choice:string> [...]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "chucknorris, norrisfact, chuck-norris, chuck-fact, chuckfact, chucknorris, chuckfact",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Returns a random Chuck Norris fact.",
+        "details": "No extended help available.",
+        "name": "chuck-fact",
+        "nsfw": false,
+        "usage": "!chuck-fact ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "ATTACH_FILES"
+        ],
+        "category": "random",
+        "description": "Flips a coin for you.",
+        "details": "No extended help available.",
+        "name": "coinflip",
+        "nsfw": false,
+        "usage": "!coinflip ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "datefact, datefact",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Returns a random date fact.",
+        "details": "No extended help available.",
+        "name": "date-fact",
+        "nsfw": false,
+        "usage": "!date-fact ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "roll",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Roll one die with x sides + any modifiers, with an optional reason.",
+        "details": "syntax: `!roll \"[# of sides | [# of dice]d[# of sides]+modifiers]\" [reason] >`",
+        "name": "dice",
+        "nsfw": false,
+        "usage": "!dice [roll:string] [reason:...string]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "dogfact, dogfact",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Returns a random dog fact.",
+        "details": "No extended help available.",
+        "name": "dog-fact",
+        "nsfw": false,
+        "usage": "!dog-fact ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "mathfact, mathfact",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Returns a random math fact.",
+        "details": "No extended help available.",
+        "name": "math-fact",
+        "nsfw": false,
+        "usage": "!math-fact ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "smith-fact, willsmith, smifffact, smifffact, smithfact",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Returns a random Will Smith fact.",
+        "details": "No extended help available.",
+        "name": "smiff-fact",
+        "nsfw": false,
+        "usage": "!smiff-fact ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "yearfact, yearfact",
+        "bot_perms": "",
+        "category": "random",
+        "description": "Returns a random year fact.",
+        "details": "No extended help available.",
+        "name": "year-fact",
+        "nsfw": false,
+        "usage": "!year-fact ",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "reference",
+    "commands": [
+      {
+        "aliases": "brew, beerlookup",
+        "bot_perms": "",
+        "category": "reference",
+        "description": "Returns information about a brewery or brew. Uses the BreweryDB API.",
+        "details": "No extended help available.",
+        "name": "beer-lookup",
+        "nsfw": false,
+        "usage": "!beer-lookup <query:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "cocktail, cocktaillookup",
+        "bot_perms": "",
+        "category": "reference",
+        "description": "Returns information about the supplied cocktail name. If no query is supplied, returns a random drink.",
+        "details": "No extended help available.",
+        "name": "cocktail-lookup",
+        "nsfw": false,
+        "usage": "!cocktail-lookup [query:...string]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "define",
+        "bot_perms": "",
+        "category": "reference",
+        "description": "Returns the definition of a supplied word. Uses the Merriam-Webster Collegiate Dictionary API.",
+        "details": "No extended help available.",
+        "name": "dictionary",
+        "nsfw": false,
+        "usage": "!dictionary <query:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "movies, film, films",
+        "bot_perms": "",
+        "category": "reference",
+        "description": "Finds a movie on TMDB.org",
+        "details": "No extended help available.",
+        "name": "movie",
+        "nsfw": false,
+        "usage": "!movie <query:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "tvshows, tv, tvseries, tv-show, tvshow",
+        "bot_perms": "",
+        "category": "reference",
+        "description": "Finds a TV show on TMDB.org",
+        "details": "No extended help available.",
+        "name": "tvshow",
+        "nsfw": false,
+        "usage": "!tvshow <query:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "urban",
+        "bot_perms": "",
+        "category": "reference",
+        "description": "Returns the Urban Dictionary result of the supplied query. If no query is supplied, returns a random thing.",
+        "details": "No extended help available.",
+        "name": "urbandictionary",
+        "nsfw": true,
+        "usage": "!urbandictionary [query:...string]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "wiki",
+        "bot_perms": "",
+        "category": "reference",
+        "description": "Returns the Wikipedia result of the supplied query. If no query is supplied, returns a random Wikipedia result.",
+        "details": "No extended help available.",
+        "name": "wikipedia",
+        "nsfw": false,
+        "usage": "!wikipedia [query:...string]",
+        "user_perms": ""
+      },
+      {
+        "aliases": "wa",
+        "bot_perms": "",
+        "category": "reference",
+        "description": "Query Wolfram Alpha with any mathematical question.",
+        "details": "No extended help available.",
+        "name": "wolfram",
+        "nsfw": false,
+        "usage": "!wolfram <query:...string>",
+        "user_perms": ""
+      }
+    ]
+  },
+  {
+    "name": "roles",
+    "commands": [
+      {
+        "aliases": "",
+        "bot_perms": "",
+        "category": "roles",
+        "description": "Used to accept the Terms of Service for a guild (applies default role).",
+        "details": "No extended help available.",
+        "name": "accept",
+        "nsfw": false,
+        "usage": "!accept ",
+        "user_perms": ""
+      },
+      {
+        "aliases": "dr, defaultrole, defaultrole",
+        "bot_perms": [
+          "MANAGE_ROLES"
+        ],
+        "category": "roles",
+        "description": "Used to configure the default role for the server.",
+        "details": "If no role is provided, the default role is cleared.",
+        "name": "default-role",
+        "nsfw": false,
+        "usage": "!default-role [role:role]",
+        "user_perms": "MANAGE_ROLES"
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "MANAGE_ROLES"
+        ],
+        "category": "roles",
+        "description": "Used to add a self-assignable role to yourself.",
+        "details": "No extended help available.",
+        "name": "iam",
+        "nsfw": false,
+        "usage": "!iam <roleName:role|roleName:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "",
+        "bot_perms": [
+          "MANAGE_ROLES"
+        ],
+        "category": "roles",
+        "description": "Used to remove a self-assignable role from yourself.",
+        "details": "No extended help available.",
+        "name": "iamnot",
+        "nsfw": false,
+        "usage": "!iamnot <roleName:role|roleName:...string>",
+        "user_perms": ""
+      },
+      {
+        "aliases": "sar, selfassignablerole, selfassignablerole",
+        "bot_perms": "",
+        "category": "roles",
+        "description": "Used to configure the self-assignable roles feature.",
+        "details": "No extended help available.",
+        "name": "self-assignable-role",
+        "nsfw": false,
+        "usage": "!self-assignable-role <add|remove> <role:role>",
+        "user_perms": "MANAGE_ROLES"
+      }
+    ]
+  }
+]
