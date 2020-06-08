@@ -1,6 +1,6 @@
 {% include head.html %}
 
-<ul class="sidenav sidenav-fixed">
+<ul id="slide-out" class="sidenav sidenav-fixed">
 	<li>
 		<div class="user-view center-align">
 			<img class="circle" src="https://i.imgur.com/xF8vf6H.png">
@@ -23,6 +23,24 @@
 </ul>
 
 <main class="main-content">
+	<nav class="deep-purple darken-4" role="navigation">
+		<div class="nav-wrapper">
+			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			
+			<ul class="right">
+				<li>
+					<a href="https://twitter.com/Spudnik_Bot" class="nav-link">
+						<i class="fab fa-twitter fa-lg"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/Spudnik-Group/Spudnik" class="nav-link">
+						<i class="fab fa-github fa-lg"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	{{ content }}
 </main>
 
