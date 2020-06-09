@@ -1,0 +1,16 @@
+{
+  "baseBranches": [
+    "master"
+  ],
+  "extends": [
+    "config:base",
+    "config:semverAllMonthly",
+    ":enableVulnerabilityAlerts",
+    ":label(devops)",
+    ":automergeAll",
+    ":automergePr"
+  ],
+  "schedule": [
+    "before 3am on the first day of the month"
+  ]
+}
